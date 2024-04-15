@@ -1,0 +1,8 @@
+CREATE TABLE tasks( 
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT, completed BOOLEAN DEFAULT FALSE,
+    tag VARCHAR(255) DEFAULT "",
+    priority NUMBER DEFAULT 3,
+    date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
